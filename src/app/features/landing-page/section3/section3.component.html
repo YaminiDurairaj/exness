@@ -31,11 +31,11 @@
             </div> -->
 
             <div class="rounded shadow-sm w-full flex justify-center items-center mt-4">
-                <table class="table rounded m-0 w-3/4  max-[768px]:w-10/12">
+                <table class="table rounded m-0 w-3/4  max-[768px]:w-full">
                     <thead>
-                        <tr class="border-b-2">
+                        <tr class="border-b-2 whitespace-nowrap">
                             <!-- Display table headers dynamically -->
-                            <th *ngFor="let header of headers" class="p-4 text-gray-600 text-md font-normal ">
+                            <th *ngFor="let header of headers" class="p-1 text-gray-600 text-md font-normal">
                                 {{ header.label }}
                             </th>
                         </tr>
@@ -43,14 +43,14 @@
                     <tbody>
                         <!-- Display table rows dynamically -->
                         <tr *ngFor="let instrument of instruments" class=" text-center border-b-2">
-                            <td class="text-left p-3">
+                            <td class="text-left p-2">
                                 {{ instrument.name }} <br />
                                 <small>{{ instrument.subtext }}</small>
                             </td>
-                            <td class="p-3">{{ instrument.leverage }}</td>
-                            <td class="p-3">{{ instrument.spread }}</td>
-                            <td class="p-3">{{ instrument.swapFree }}</td>
-                            <td class="p-3">{{ instrument.category }}</td>
+                            <td class="p-2">{{ instrument.leverage }}</td>
+                            <td class="p-2">{{ instrument.spread }}</td>
+                            <td class="p-2">{{ instrument.swapFree }}</td>
+                            <td class="p-2">{{ instrument.category }}</td>
                         </tr>
                     </tbody>
                 </table>
