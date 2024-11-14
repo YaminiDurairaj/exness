@@ -8,5 +8,5 @@ import { ButtonComponent } from 'src/app/shared-comp/button/button.component';
 })
 export class HomeComponent {
   buttonLabel1: string = 'Start Trading';
-  buttonLabel2: string = 'Upgrade To Exness';
+  buttonLabel2: string = 'Upgrade To Tamil Forex Signals';
 }
