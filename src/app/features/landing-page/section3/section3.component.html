@@ -38,14 +38,15 @@
                     <thead>
                         <tr class="border-b-2 whitespace-nowrap">
                             <!-- Display table headers dynamically -->
-                            <th *ngFor="let header of headers" class="p-1 text-gray-100 text-md font-normal">
+                            <th *ngFor="let header of headers"
+                                class="p-1 text-gray-100 text-md font-normal max-[768px]:px-6">
                                 {{ header.label }}
                             </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr *ngFor="let instrument of instruments" class="border-b border-gray-700">
-                            <td class="flex items-start py-4 px-2">
+                            <td class="flex items-start py-4 px-2 max-[768px]:p-1 ">
                                 <img [src]="instrument.image" alt="{{ instrument.name }}"
                                     class="w-9 h-9 rounded-full mr-3" />
                                 <div>
@@ -53,9 +54,9 @@
                                     <small class="text-gray-400">{{ instrument.subtext }}</small>
                                 </div>
                             </td>
-                            <td class="py-4 px-2 text-gray-300">{{ instrument.leverage }}</td>
-                            <td class="py-4 px-2 text-gray-300">{{ instrument.spread }}</td>
-                            <td class="py-4 px-2 text-gray-300">{{ instrument.swapFree }}</td>
+                            <td class="py-4 px-2 text-gray-300  max-[768px]:px-6">{{ instrument.leverage }}</td>
+                            <td class="py-4 px-2 text-gray-300  max-[768px]:px-6 ">{{ instrument.spread }}</td>
+                            <td class="py-4 px-2 text-gray-300  max-[768px]:px-6">{{ instrument.swapFree }}</td>
                             <!-- <td class="p-4 text-blue-500 cursor-pointer">{{ instrument.category }} ›</td> -->
                         </tr>
                     </tbody>
