@@ -1,8 +1,9 @@
-<div class="p-5">
+<div class="p-5 bg-[#070E20]">
     <div class="py-4 px-2 flex flex-col justify-center items-center">
         <div class="flex flex-col items-center justify-center py-6 w-full">
-            <h1 class="text-5xl font-semibold text-center  max-[768px]:text-4xl">What’s your asset of choice?</h1>
-            <p class="text-gray-600 text-center font-medium w-1/2 p-4  max-[768px]:w-3/4">
+            <h1 class="text-5xl font-semibold text-center  max-[768px]:text-4xl text-white">What’s your asset of choice?
+            </h1>
+            <p class="text-gray-300 text-center font-medium w-1/2 p-4  max-[768px]:w-3/4">
                 Whichever assets you choose to trade, Tamil Forex Signals keeps your spreads stable, your pricing firm
                 and your
                 execution fast!
@@ -36,14 +37,14 @@
                     <thead>
                         <tr class="border-b-2 whitespace-nowrap">
                             <!-- Display table headers dynamically -->
-                            <th *ngFor="let header of headers" class="p-1 text-gray-600 text-md font-normal">
+                            <th *ngFor="let header of headers" class="p-1 text-gray-100 text-md font-normal">
                                 {{ header.label }}
                             </th>
                         </tr>
                     </thead>
                     <tbody>
                         <!-- Display table rows dynamically -->
-                        <tr *ngFor="let instrument of instruments" class=" text-center border-b-2">
+                        <tr *ngFor="let instrument of instruments" class=" text-center border-b-2 text-white">
                             <td class="text-left p-2">
                                 {{ instrument.name }} <br />
                                 <small>{{ instrument.subtext }}</small>
@@ -56,8 +57,6 @@
                     </tbody>
                 </table>
             </div>
-
-
         </div>
     </div>
 </div>

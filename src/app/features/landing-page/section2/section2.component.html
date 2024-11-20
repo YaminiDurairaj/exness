@@ -3,19 +3,19 @@
         <div class="flex flex-wrap justify-around w-full my-3">
             <div
                 class="flex items-center mb-2.5 before:content-['•'] before:text-[#FFDE02] before:text-2xl before:mr-2">
-                <span class="text-gray-600 text-xl">Fast execution</span>
+                <span class="text-gray-600 text-xl max-[768px]:text-2xl">Fast execution</span>
             </div>
             <div
                 class="flex items-center mb-2.5 before:content-['•'] before:text-[#FFDE02] before:text-2xl before:mr-2">
-                <span class="text-gray-600 text-xl">Stable spreads</span>
+                <span class="text-gray-600 text-xl max-[768px]:text-2xl">Stable spreads</span>
             </div>
             <div
                 class="flex items-center mb-2.5 before:content-['•'] before:text-[#FFDE02] before:text-2xl before:mr-2">
-                <span class="text-gray-600 text-xl">Seamless withdrawals*</span>
+                <span class="text-gray-600 text-xl max-[768px]:text-2xl">Seamless withdrawals*</span>
             </div>
             <div
                 class="flex items-center mb-2.5 before:content-['•'] before:text-[#FFDE02] before:text-2xl before:mr-2">
-                <span class="text-gray-600 text-xl">Zero commission**</span>
+                <span class="text-gray-600 text-xl max-[768px]:text-2xl">Zero commission**</span>
             </div>
         </div>
         <div class="flex flex-col items-center justify-center py-6 w-full my-6">
@@ -28,9 +28,9 @@
             </p>
             <app-button [label]="openAccount" class="my-3"></app-button>
         </div>
-        <div class="flex justify-around w-full max-[768px]:flex-col items-center">
+        <div class="flex justify-around w-full max-[768px]:flex-col items-center sm:space-x-12">
             <div
-                class="w-1/5 h-96 rounded-md bg-[#070E20] flex flex-col items-center justify-start p-6 relative max-[768px]:w-1/2 my-2 max-[550px]:w-4/6">
+                class="relative p-4 rounded-md bg-[#070E20] w-1/4 max-[768px]:w-1/2 h-96 my-2 max-[550px]:w-full cursor-pointer hover:scale-105 transition-transform duration-300">
                 <!-- Payments label -->
                 <div class="w-fit px-4 py-2 bg-[rgba(26,31,53,0.5)] rounded-full">
                     <p class="text-white text-xs">Payments</p>
@@ -50,27 +50,25 @@
                                 <i class="fas fa-university text-sm"></i>
                                 <p class="text-xs">BANK ACCOUNT</p>
                             </div>
-                            <p class="text-green-400 text-xs font-semibold">You’ve been paid $800.00</p>
+                            <p class="text-green-400 text-xs font-semibold">You’ve been paid Rs. 8000</p>
                         </div>
 
                         <!-- CARD 2 (Middle) -->
                         <div
                             class="w-52 h-14 bg-[#2c3e50] rounded-md absolute top-4 z-20 flex items-end justify-center text-white shadow-md text-xs">
-                            You’ve been paid $1,200.00
+                            You’ve been paid Rs. 1200
                         </div>
 
                         <!-- CARD 3 (Lowest, back) -->
                         <div
                             class="w-48 h-16 bg-[#34495e] rounded-md absolute top-8 z-10 flex items-end justify-center text-white shadow-md text-xs">
-                            You’ve been paid $500.00
+                            You’ve been paid Rs. 5000
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-            <div class="relative p-4 rounded-md bg-[#070E20] w-1/5 max-[768px]:w-1/2 h-96 my-2 max-[550px]:w-4/6">
+            <div
+                class="relative p-4 rounded-md bg-[#070E20] w-1/4 max-[768px]:w-1/2 h-96 my-2 max-[550px]:w-full cursor-pointer hover:scale-105 transition-transform duration-300">
                 <!-- Background Image -->
                 <img src="assets/images/home-bg.png" alt="Support Background"
                     class="absolute inset-0 w-full h-full object-cover rounded-md" />
@@ -87,7 +85,7 @@
             </div>
 
             <div
-                class="w-1/5 rounded-md bg-[rgba(106,154,176,0.8)] flex flex-col items-center justify-around p-4 max-[768px]:w-1/2 h-96 my-2 max-[550px]:w-4/6">
+                class="w-1/4 rounded-md bg-[rgba(106,154,176,0.8)] flex flex-col items-center justify-around p-4 max-[768px]:w-1/2 h-96 my-2 max-[550px]:w-full cursor-pointer hover:scale-105 transition-transform duration-300">
                 <div class="px-4 py-2 rounded-full bg-[rgba(26,31,53,0.2)]">
                     <p class="text-white text-base text-xs">Swap-Free</p>
                 </div>
@@ -107,7 +105,8 @@
                         apply.</p>
                 </div>
             </div>
-            <div class="relative  p-4 rounded-md bg-[#070E20] w-1/5 max-[768px]:w-1/2 h-96 my-2 max-[550px]:w-4/6">
+            <div
+                class="relative  p-4 rounded-md bg-[#070E20] w-1/4 max-[768px]:w-1/2 h-96 my-2 max-[550px]:w-full cursor-pointer hover:scale-105 transition-transform duration-300">
                 <!-- Background Image -->
                 <img src="assets/images/card-bg.png" alt="Support Background"
                     class="absolute inset-0 w-full h-full object-cover rounded-md" />
