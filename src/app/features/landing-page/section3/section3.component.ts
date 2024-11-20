@@ -13,7 +13,7 @@ export class Section3Component {
     { label: 'Leverage' },
     { label: 'Avg. spread, pips' },
     { label: 'Swap-free' },
-    { label: 'Category' },
+    // { label: 'Category' },
   ];
 
   instruments = [
@@ -24,6 +24,7 @@ export class Section3Component {
       spread: '20',
       swapFree: 'Available',
       category: 'Metals',
+      image: 'assets/images/instrument_1.png', // Replace with actual image URL
     },
     {
       name: 'EURUSD',
@@ -32,6 +33,7 @@ export class Section3Component {
       spread: '1',
       swapFree: 'Available',
       category: 'Currencies',
+      image: 'assets/images/instrument_2.png', // Replace with actual image URL
     },
     {
       name: 'US500',
@@ -40,6 +42,7 @@ export class Section3Component {
       spread: '16.5',
       swapFree: 'Available',
       category: 'Indices',
+      image: 'assets/images/instrument_3.png', // Replace with actual image URL
     },
     {
       name: 'APPL',
@@ -48,6 +51,7 @@ export class Section3Component {
       spread: '0.9',
       swapFree: 'Available',
       category: 'Stocks',
+      image: 'assets/images/instrument_4.png', // Replace with actual image URL
     },
   ];
 }
