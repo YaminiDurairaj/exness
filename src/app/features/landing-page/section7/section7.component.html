@@ -1,15 +1,16 @@
 <div class="p-5">
-    <div class="py-4 px-2 flex flex-col justify-around items-center">
-        <div class=" relative p-5 flex justify-center w-full ">
+    <div class="py-4 px-2 flex flex-col justify-around items-center  max-[768px]:px-0">
+        <div class=" relative p-5 flex justify-center w-full max-[768px]:px-1">
             <!-- <img src="https://d33vw3iu5hs0zi.cloudfront.net/media/home_cta_banner_7bb7b120e2.jpg"
                 class="w-full rounded-md h-[400px] "> -->
-            <img src="assets/images/bg-green.jpg" class="w-full rounded-md h-[400px] ">
+            <img src="assets/images/bg-green.jpg" class="w-full rounded-md h-[400px] max-[768px]:h-[300px] ">
             <div class="absolute -bottom-8  w-full pb-0 flex justify-center items-end">
-                <div class="bg-[#070E20] shadow-lg p-5 mb-0 rounded-md flex flex-col md:flex-row gap-4 w-[80%]">
+                <div
+                    class="bg-[#070E20] shadow-lg p-5 mb-0 rounded-md flex flex-col md:flex-row gap-4 w-[80%] max-[768px]:w-[85%]">
                     <div class="w-full flex flex-row justify-between items-center py-8 px-6 max-[550px]:px-2">
-                        <h1 class="font-medium text-4xl text-white w-1/2 max-[768px]:text-2xl  max-[768px]:w-3/4">
+                        <h1 class="font-medium text-4xl text-white w-1/2 max-[768px]:text-2xl  max-[768px]:w-3/4 ">
                             Discover a more efficient way to trade oil</h1>
-                        <app-button [label]="register" class=""></app-button>
+                        <app-button [label]="register" class="max-[768px]:ml-1"></app-button>
                     </div>
                 </div>
             </div>
