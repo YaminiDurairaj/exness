@@ -1,0 +1,30 @@
+<div class="max-w-4xl mx-auto px-4 py-10">
+    <!-- Header -->
+    <div class="text-center mb-10">
+        <h1 class="text-4xl font-extrabold text-[#070E20]">
+            <span class="text-green-700">Frequently</span> Asked Questions
+        </h1>
+        <p class="text-gray-500 mt-3">
+            Hey there! Got questions? We've got answers. Check out our FAQ page for all the deets. Still not satisfied?
+            Hit us up.
+        </p>
+    </div>
+
+    <!-- FAQ Items -->
+    <div class="space-y-6">
+        <div *ngFor="let faq of faqs; let i = index" class="bg-white shadow-lg rounded-lg p-5">
+            <button (click)="toggleFaq(i)"
+                class="w-full flex justify-between items-center text-[#070E20] font-bold text-xl focus:outline-none">
+                <span>{{ faq.question }}</span>
+                <svg [class.rotate-180]="faq.isOpen" class="w-6 h-6 transform transition-transform duration-200"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+                <!-- <img src="assets/images/arrow.svg"> -->
+            </button>
+            <div *ngIf="faq.isOpen" class="mt-4 text-gray-600">
+                {{ faq.answer }}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SwPush } from '@angular/service-worker';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
