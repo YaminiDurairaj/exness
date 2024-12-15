@@ -12,6 +12,7 @@ import { Section7Component } from './section7/section7.component'; // Import Sha
 import { HttpClientModule } from '@angular/common/http';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { Section8Component } from './section8/section8.component';
+import { SwiperComponent } from './swiper/swiper.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { Section8Component } from './section8/section8.component';
     Section7Component,
     NotificationsComponent,
     Section8Component,
+    SwiperComponent,
   ],
   imports: [
     CommonModule,
