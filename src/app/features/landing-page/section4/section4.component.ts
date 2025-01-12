@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class Section4Component {
   startExploring: string = 'Start Exploring';
+  redirectToExternal() {
+    window.location.href =
+      'https://my.octafx.com/change-partner-request/?partner=714232';
+  }
 }

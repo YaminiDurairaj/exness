@@ -9,7 +9,7 @@
                 and your
                 execution fast!
             </p>
-            <app-button [label]="openAccount" class="mt-3"></app-button>
+            <app-button [label]="openAccount" class="mt-3" (click)="redirectToExternal()"></app-button>
             <!-- <div class="w-full font-sans">
                 <div class="flex justify-around border-b">
                     <div *ngFor="let header of headers" class="text-center font-bold bg-gray-100 py-2">

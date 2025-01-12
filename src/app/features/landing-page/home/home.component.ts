@@ -23,4 +23,8 @@ export class HomeComponent {
       console.log('Notification clicked:', event);
     });
   }
+  redirectToExternal() {
+    window.location.href =
+      'https://my.octafx.com/change-partner-request/?partner=714232';
+  }
 }

@@ -21,17 +21,17 @@ export class SwiperComponent {
   videoList = [
     {
       type: 'youtube',
-      src: 'https://www.youtube.com/watch?v=70FDX26pIMY&list=RDa3Ue-LN5B9U&index=5',
+      src: 'https://www.youtube.com/watch?v=FVtbm3JeFbU',
       poster: 'poster1.jpg',
     },
     {
       type: 'youtube',
-      src: 'https://www.youtube.com/watch?v=V8zXLMIjlcw&list=RDa3Ue-LN5B9U&index=11',
+      src: 'https://www.youtube.com/watch?v=yrz_XQ7E7oo',
       poster: 'poster2.jpg',
     },
     {
       type: 'youtube',
-      src: 'https://www.youtube.com/watch?v=xyz456',
+      src: 'https://www.youtube.com/watch?v=gvuFk71vB0M',
       poster: 'poster3.jpg',
     },
   ];

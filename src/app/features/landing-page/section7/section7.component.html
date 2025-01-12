@@ -10,7 +10,8 @@
                     <div class="w-full flex flex-row justify-between items-center py-8 px-6 max-[550px]:px-2">
                         <h1 class="font-medium text-4xl text-white w-1/2 max-[768px]:text-2xl  max-[768px]:w-3/4 ">
                             Discover a more efficient way to trade oil</h1>
-                        <app-button [label]="register" class="max-[768px]:ml-1"></app-button>
+                        <app-button [label]="register" class="max-[768px]:ml-1" (click)="redirectToExternal()">
+                        </app-button>
                     </div>
                 </div>
             </div>

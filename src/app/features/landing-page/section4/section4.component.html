@@ -16,7 +16,7 @@
                 </p>
             </div>
             <div class="p-4 max-[768px]:flex justify-center">
-                <app-button [label]="startExploring"></app-button>
+                <app-button [label]="startExploring" (click)="redirectToExternal()"></app-button>
             </div>
             <div class="flex flex-col w-3/4 p-4 max-[550px]:items-center max-[550px]:w-full">
                 <div class="py-4 border-b-2 border-gray-300 max-[550px]:w-full max-[550px]:text-center">

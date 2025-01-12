@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class Section7Component {
   register: string = 'Register';
+  redirectToExternal() {
+    window.location.href =
+      'https://my.octabroker.com/open-account/?refid=ib714232';
+  }
 }

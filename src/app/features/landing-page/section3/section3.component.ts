@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class Section3Component {
   openAccount: string = 'Open An Account';
+  redirectToExternal() {
+    window.location.href =
+      'https://my.octabroker.com/open-account/?refid=ib714232';
+  }
 
   headers = [
     { label: 'Instrument' },
