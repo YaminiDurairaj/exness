@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'Tamil forex signals';
+  title = 'Tamil FX Signals';
   enquiryForm: boolean = false;
   openEnquiryForm() {
     this.enquiryForm = true;

@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent {
   buttonLabel1: string = 'Start Trading';
-  buttonLabel2: string = 'Upgrade To Tamil Forex Signals';
+  buttonLabel2: string = 'Upgrade To Tamil FX Signals';
   buttonLabel3: string = 'Subscribe to Notifications';
   readonly VAPID_PUBLIC_KEY =
     'BPwFjXsSv9fTFRCLvRSGgbDsEl8iYm8AxbHLdotkeKjCRe5bIIC11buaWXWTATAITXubedMhV243PgDc4yWvDh4';
