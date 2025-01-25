@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { LandingPageModule } from './features/landing-page/landing-page.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { HttpClientModule } from '@angular/common/http';
+import { EnquiryformComponent } from './features/landing-page/enquiryform/enquiryform.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
+    EnquiryformComponent, // Add it to declarations
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
